@@ -6,12 +6,12 @@ import org.apache.kafka.clients.admin.NewTopic;
 import org.example.kafkaproject.orderservice.dtos.OrderDTO;
 import org.example.kafkaproject.orderservice.entities.OrderProduct;
 import org.example.kafkaproject.orderservice.entities.Orders;
-import org.example.kafkaproject.orderservice.event.OrderCreatedEvent;
 import org.example.kafkaproject.orderservice.repositories.OrdersRepo;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
+import org.example.kafkaproject.event.OrderCreatedEvent;
 
 @Service
 @RequiredArgsConstructor

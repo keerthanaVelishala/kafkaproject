@@ -1,0 +1,24 @@
+{
+  "name": "OrderCreatedEvent",
+  "namespace": "org.example.kafkaproject.event",
+  "type": "record",
+  "fields": [
+    {
+      "name": "orderedItems",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "ProductDTO",
+          "type": "record",
+          "fields": [
+            { "name": "id", "type": "long" },
+            { "name": "productId", "type": "long" },
+            { "name": "productName", "type": "string" },
+            { "name": "quantity", "type": "long" }
+          ]
+        }
+      },
+      "default": []
+    }
+  ]
+}

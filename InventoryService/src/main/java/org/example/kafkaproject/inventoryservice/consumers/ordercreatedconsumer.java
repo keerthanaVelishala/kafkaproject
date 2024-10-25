@@ -1,7 +1,7 @@
 package org.example.kafkaproject.inventoryservice.consumers;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.kafkaproject.orderservice.event.OrderCreatedEvent;
+import org.example.kafkaproject.event.OrderCreatedEvent;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
